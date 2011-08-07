@@ -509,7 +509,7 @@ public class FeatureNegotiationEngine {
     {
         xmppOutput.detach();
         xmppInput.detach();
-        SSLContext context = SSLContext.getInstance("TLS");
+        SSLContext context = SSLContext.getInstance("SSL");
         context.init(new KeyManager[]{},
             new javax.net.ssl.TrustManager[]{
                 new UnTrustManager()
